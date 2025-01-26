@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+
+    background:url(pexels-pixabay-531880.jpg);
+    height:100vh;
+    background-size:100% 100%;
+    
+}
+.container .navbar{
+    background-color:rgba(22,112,214,0.4);
+    height:90px;
+    width:100%;
+}
+.navbar ul{
+    float:right;
+    margin-right:20px;
+}
+.navbar .logo{
+  display:inline-block; /*inline-block verdiğimizde LOGO tek hareket eder vermezsek tüm hücre aşağı kayar. */
+  margin-left:40px;
+  margin-top:30px;
+
+}
+
+.navbar .logo a{
+    color: aliceblue; /*Rengini beyaz yapıyor.*/
+    font-size:20px; /*Büyütüyor.*/
+    text-decoration: none; /*Altındaki çizgiyi kaldırıyor.*/
+}
+
+.navbar ul li{
+
+list-style:none; /*Listenin başındaki noktaları kaldırıyor.*/
+display: inline-block;
+margin-top :15px; /*Üstten bırakılan boşluk*/
+margin-inline-start:40px; /*Aralarındaki mesafe listenin */
+
+}
+
+
+.navbar ul a{
+    color: aliceblue;
+    font-size:20px;
+    text-decoration: none;
+    transition:1s;
+    
+   
+}
+
+.navbar ul li a.active, /*Ana sayfanın rengini ekranda sabit turuncu tutar.*/
+.navbar ul a:hover{
+    background-color:#ff6e00;
+    border-radius:2px;
+}
+
+.container .center{
+    font-size:30px;
+    margin-left:35%;
+    display:inline-block;
+    margin-top:10%;
+}
+
+.container .center h2{
+    margin-top:5px;
+    display:inline-block;
+    color:blanchedalmond;
+    margin-left:20%;
+}
+
+.container .buttons{
+    position: absolute;
+    margin-left:43%;
+    margin-top:30px;
+
+    
+}
+
+.buttons button{
+    background-color:rgba(240, 98, 98, 0.923);
+    margin-inline-start:10px;
+    font-size:18px;
+    border-radius:10px;
+    height:40px;
+    width:115px;
+    border:solid 1px red;
+    transition:1s; /*Arka plan renginde hızlanma süresi yani geçişteki hızı*/
+}
+
+.buttons button:hover{
+    background-color:whitesmoke;
+}
